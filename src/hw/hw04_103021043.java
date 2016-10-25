@@ -13,77 +13,78 @@ public class hw04_103021043 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
+		for(;;){
 		System.out.println("請選擇 1,2,3,4");
-		int b=scn.nextInt();
-		System.out.println("請輸入n:");
+		int b=scn.nextInt();	
+	    if(b==1){
+	    System.out.println("請輸入n:");
 		int a=scn.nextInt();
-		/*if(b==1){
 		for(int i=0;i<a;i++){
 			for(int x=a;x>i;x--){
 				System.out.print("*");
 			}
-			System.out.println(" ");
+			System.out.println("");
 			}
 		
 		for(int i=1;i<a;i++){
 			for(int x=-1;x<i;x++){
 				System.out.print("*");
 			}
-			System.out.println(" ");
+			System.out.println("");
 			}
 		System.out.println();	
 	   }
 		
 		else if(b==2){
+			 System.out.println("請輸入n:");
+				int a=scn.nextInt();
 			 for(int i=1;i<a;i++){
 					for(int x=0;x<i;x++){
 						System.out.print("*");
 					}
-					System.out.println(" ");
+					System.out.println();
 					}
 			for(int i=0;i<a;i++){
 				for(int x=a;x>i;x--){
 					System.out.print("*");
 				}
-				System.out.println(" ");
-			}
-		}*/
-	
-		 if(b==3){
-			 for(int i=1;i<a;i=i+2){
-					for(int x=0;x<i;x++){
-						for(int j=a-i;j>x;j=j-2){	
-						System.out.print(" ");
-						}
-						System.out.print("*");
-					}
-					System.out.println(" ");
-					}
-			for(int i=0;i<a;i=i+2){
-				for(int x=a;x>i;x--){
-					System.out.print("*");
-				}
-				System.out.println(" ");
+				System.out.println();
 			}
 		}
-		
-		
-		
-		
-		
-		
- 
 	
+		   else if(b==3){
+			   System.out.println("請輸入n:");
+				int a=scn.nextInt();
+		    	 int k=a-1;
+				 for(int i=1;i<a;i=i+2){
+						for(int j=0;j<k;j++){
+							System.out.print(" ");
+						}
+				for(int x=0;x<i;x++){
+						System.out.print("*");
+					}
+					System.out.println();
+					k--;
+				}
+				 for(int i=0;i<a;i=i+2){
+					 for(int j=0;j<k;j++){
+						 System.out.print(" ");
+					 }
+					 for(int x=a;x>i;x--){
+						 System.out.print("*"); 
+					 }
+					 System.out.println();
+					 k++;
+				 }
+			}
 		
-		
-	
-		
-		
-		 }
-      }
-
-
-
+		    else if(b==4){
+		    	 System.out.println("結束了!!");
+		    	 break;
+		     }
+	  }
+ }
+	}
 
 
 

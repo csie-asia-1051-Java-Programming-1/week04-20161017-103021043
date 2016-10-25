@@ -11,22 +11,31 @@ public class hw03_103021043 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
+		for(;;){
 		int x=0;
 		int y=0;
 		int z=0;
 		for(;;){
 			System.out.println("叫块:");
 			int a=scn.nextInt();
-			if(a>0){
+			if(a>0&&a!=999){
 		           x=x+1;
 				}else if(a<0){
 				   y=y+1;
 				}else if(a==0){
 					z=z+1;
+				}else if(a==999){
+					break;
 				}
 			
-		}
-
-         System.out.print("タ计Τ"+x+""+"璽计Τ"+y+""+"箂Τ"+z+"");
+		} 
+		System.out.print("タ计Τ"+x+""+"璽计Τ"+y+""+"箂Τ"+z+"");
+		System.out.println("琌璶挡");
+		String n=scn.next();
+		if(n.equals("n")){
+			System.out.println("end");
+			break;
+	   }	
      }
+   }	
 }
